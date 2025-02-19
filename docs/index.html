@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Primer/21.1.1/primer.css'>
     
     <link rel="icon" href="https://icons.iconarchive.com/icons/pictogrammers/material/128/wechat-icon.png"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
@@ -171,28 +171,6 @@ for(var i=0;i<iconPost.length;i++){
 
 
 </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
 
-    document.querySelectorAll('.listLabels').forEach(el => el.style.display = 'none');
-
-
-    const footer2 = document.getElementById('footer2');
-    if (footer2) {
-        footer2.remove();
-    }
-
-
-    const footer1 = document.getElementById('footer1');
-    if (footer1) {
-        const link = footer1.querySelector('a');
-        if (link) {
-            link.href = 'https://www.wx007.xyz';
-            link.textContent = '微信好友提取';
-        }
-    }
-});
-
-</script>
 
 </html>
