@@ -4,24 +4,5 @@
     "avatarUrl":"https://icons.iconarchive.com/icons/pictogrammers/material/128/wechat-icon.png",
     "needComment":0,
     "GMEEK_VERSION":"last",
-    "indexScript":"<script>document.addEventListener('DOMContentLoaded', function () {
-    // 隐藏所有 class='listLabels' 的元素
-    document.querySelectorAll('.listLabels').forEach(el => el.style.display = 'none');
-
-    // 删除 id='footer2' 的元素
-    const footer2 = document.getElementById('footer2');
-    if (footer2) {
-        footer2.remove();
-    }
-
-    // 修改 id='footer1' 内的超链接
-    const footer1 = document.getElementById('footer1');
-    if (footer1) {
-        const link = footer1.querySelector('a');
-        if (link) {
-            link.href = 'https://www.wx007.xyz';
-            link.textContent = '微信好友提取'; // 保持原始文本不变
-        }
-    }
-});</script>"
+    "indexScript":"<script src='https://paste.myst.rs/raw/5p1yoo41/flcye547'></script>"
 }
