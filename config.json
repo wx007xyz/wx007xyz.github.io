@@ -4,5 +4,7 @@
     "avatarUrl":"https://icons.iconarchive.com/icons/pictogrammers/material/128/wechat-icon.png",
     "needComment":0,
     "GMEEK_VERSION":"last",
-    "indexScript":"<script src='https://paste.myst.rs/raw/5p1yoo41/flcye547'></script>"
+    "primerCSS":"<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Primer/21.1.1/primer.css'>"
+
+
 }
