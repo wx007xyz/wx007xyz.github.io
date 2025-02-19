@@ -171,6 +171,28 @@ for(var i=0;i<iconPost.length;i++){
 
 
 </script>
-<script src='https://paste.myst.rs/raw/5p1yoo41/flcye547'></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+    document.querySelectorAll('.listLabels').forEach(el => el.style.display = 'none');
+
+
+    const footer2 = document.getElementById('footer2');
+    if (footer2) {
+        footer2.remove();
+    }
+
+
+    const footer1 = document.getElementById('footer1');
+    if (footer1) {
+        const link = footer1.querySelector('a');
+        if (link) {
+            link.href = 'https://www.wx007.xyz';
+            link.textContent = '微信好友提取';
+        }
+    }
+});
+
+</script>
 
 </html>
