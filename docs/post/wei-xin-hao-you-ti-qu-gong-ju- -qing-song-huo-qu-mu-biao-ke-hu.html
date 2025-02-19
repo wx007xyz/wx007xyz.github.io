@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     
-    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+    <link rel="icon" href="https://icons.iconarchive.com/icons/pictogrammers/material/128/wechat-icon.png"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -43,7 +43,7 @@
 💥 让营销更简单，让业绩更轻松！💥。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://wx007xyz.github.io/post/wei-xin-hao-you-ti-qu-gong-ju-%20-qing-song-huo-qu-mu-biao-ke-hu.html">
-<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<meta property="og:image" content="https://icons.iconarchive.com/icons/pictogrammers/material/128/wechat-icon.png">
 <title>微信好友提取工具 轻松获取目标客户</title>
 
 
@@ -115,11 +115,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 💥 让营销更简单，让业绩更轻松！💥</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
-<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
-<div class="comments" id="comments"></div>
-
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wx007xyz.github.io">Blog Title</a></div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wx007xyz.github.io">微信好友提取</a></div>
 <div id="footer2">
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
@@ -174,41 +171,6 @@ document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
 
 
 
-function openComments(){
-    cm=document.getElementById("comments");
-    cmButton=document.getElementById("cmButton");
-    cmButton.innerHTML="loading";
-    span=document.createElement("span");
-    span.setAttribute("class","AnimatedEllipsis");
-    cmButton.appendChild(span);
-
-    script=document.createElement("script");
-    script.setAttribute("src","https://utteranc.es/client.js");
-    script.setAttribute("repo","wx007xyz/wx007xyz.github.io");
-    script.setAttribute("issue-term","title");
-    
-    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
-    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
-    else{script.setAttribute("theme","preferred-color-scheme");}
-    
-    script.setAttribute("crossorigin","anonymous");
-    script.setAttribute("async","");
-    cm.appendChild(script);
-
-    int=self.setInterval("iFrameLoading()",200);
-}
-
-function iFrameLoading(){
-    var utterances=document.getElementsByClassName('utterances');
-    if(utterances.length==1){
-        if(utterances[0].style.height!=""){
-            utterancesLoad=1;
-            int=window.clearInterval(int);
-            document.getElementById("cmButton").style.display="none";
-            console.log("utterances Load OK");
-        }
-    }
-}
 
 
 
